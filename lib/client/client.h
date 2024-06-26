@@ -21,19 +21,19 @@ namespace net
 {
 
 
-class Server
+class Client
 {
 public:
-    Server(int, std::string);
-    ~Server();
+    Client(int, std::string);
+    ~Client();
 
-    void start();
+    void connect();
 
 private:
     int init();
     void recieve();
-    // void process();
-    // void send();
+    void process();
+    void send();
 
 
     static constexpr uint16_t BUFFER_SIZE = 1024;

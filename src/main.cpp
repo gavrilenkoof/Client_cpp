@@ -1,19 +1,16 @@
 #include <iostream>
 
 
-#include <lib/server/server.h>
+#include <lib/client/client.h>
 
 
 
 int main()
 {
 
-    auto server = net::Server(8888, "127.0.0.1");
+    auto client = net::Client(8888, "127.0.0.1");
 
-    server.start();
-
-
-
+    client.connect();
 
     return 0;
 }

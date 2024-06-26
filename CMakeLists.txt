@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 set(CXX_STANDARD 17)
 
-project(server VERSION 1.0 LANGUAGES CXX)
+project(client VERSION 1.0 LANGUAGES CXX)
 
 
 # executable
@@ -18,4 +18,4 @@ target_include_directories(app PUBLIC
                           )
 
 
-target_link_libraries(app PUBLIC server)
+target_link_libraries(app PUBLIC client)
